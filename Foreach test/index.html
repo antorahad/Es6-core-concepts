@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #product-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+            gap: 20px;
+        }
+
+        .product-card{
+            background-color: #eeeeee;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+
+        .product-card h1{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #171717;
+            text-align: center;
+        }
+
+        .product-card p{
+            font-size: 14px;
+            font-weight: 300;
+            font-family: sans-serif;
+            color: #171717;
+            text-align: center;
+        }
+
+        .product-card button{
+            width: 100%;
+            background-color: darkviolet;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 12px 0;
+            border-radius: 10px;
+        }
+
+        .product-card img{
+            width: 250px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <center>
+            <h1>Feature Products</h1>
+        </center>
+        <div id="product-container"></div>
+    </section>
+    <script src="../Foreach test/app.js"></script>
+</body>
+</html>
