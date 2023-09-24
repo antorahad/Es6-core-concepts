@@ -11,6 +11,22 @@
             margin: 0;
             box-sizing: border-box;
         }
+
+        ul{
+            list-style: none;
+        }
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .card{
+            background-color: #f6f6f6f6;
+            padding: 15px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -18,11 +34,16 @@
         <a href="index.html">Mobile Bazar</a>
         <div>
             <input type="text" id="search" placeholder="Search Here">
-            <button>Search</button>
+            <button onclick="handleSearch()">Search</button>
         </div>
     </header>
-    <main>
+    <main style="max-width: 1050px; margin: 30px auto;">
         <div id="container"></div>
+        <div style="margin: 20px 0 0;">
+            <center>
+                <button>Show All</button>
+            </center>
+        </div>
     </main>
     <script src="../Api project/app.js"></script>
 </body>
