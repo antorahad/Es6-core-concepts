@@ -1,4 +1,4 @@
-const loadData = (searchText) => {
+const loadData = () => {
     fetch('https://raw.githubusercontent.com/antorahad/Es6-core-concepts/main/Api%20project/product.json')
     .then(res => res.json())
     .then(phones => displayData(phones))
@@ -41,10 +41,10 @@ const displayData = (phones) => {
     })
 }
 
-const handleSearch = () => {
-    const search = document.getElementById('search');
-    const searchText = search.value;
-    loadData(searchText);
-}
+// const handleSearch = () => {
+//     const search = document.getElementById('search');
+//     const searchText = search.value;
+    
+// }
 
 loadData();
